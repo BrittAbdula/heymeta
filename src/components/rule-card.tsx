@@ -26,21 +26,23 @@ export type Rule = {
 
 export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
   return (
-    <Card className="bg-background p-4 max-h-[calc(100vh-8rem)] aspect-square flex flex-col">
+    <Card className="bg-background p-4 max-h-[calc(100vh-8rem)] flex flex-col">
       <CardContent
         className={cn(
-          "bg-card h-full mb-2 font-mono p-4 pr-1 text-sm opacity-50 hover:opacity-100 transition-opacity group relative flex-grow",
+          "bg-card h-full mb-2 font-mono p-4 pr-1 text-sm opacity-100 hover:opacity-80 transition-opacity group relative flex-grow",
           isPage && "opacity-100",
         )}
       >
-        <div className="group-hover:flex hidden right-4 bottom-4 absolute z-10 space-x-2">
+        <div className="group-hover:flex hidden right-4 absolute top-2 z-10 space-x-2">
           <ShareButton slug={rule.slug} />
           <CopyButton content={rule.content} slug={rule.slug} />
         </div>
 
         <Link href={`/${rule.slug}`}>
           <ScrollArea className="h-full">
-            <code className="text-sm block pr-3">{rule.content}</code>
+          <code className="text-sm block pr-3 font-mono text-blue-600 leading-relaxed tracking-tight">
+          {rule.content}
+            </code>
           </ScrollArea>
         </Link>
       </CardContent>
@@ -63,7 +65,7 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
         {rule.libs && rule.libs.length > 0 && (
           <Popover>
             <PopoverTrigger className="flex gap-2 items-center overflow-x-auto whitespace-nowrap h-5 cursor-pointer hover:bg-accent">
-              {rule.libs.slice(0, 2).map((lib) => (
+              {rule.libs.slice(0, 6).map((lib) => (
                 <span
                   key={lib}
                   className="text-xs text-[#878787] font-mono flex-shrink-0"
@@ -71,7 +73,7 @@ export function RuleCard({ rule, isPage }: { rule: Rule; isPage?: boolean }) {
                   {lib}
                 </span>
               ))}
-              {rule.libs.length > 2 && (
+              {rule.libs.length > 6 && (
                 <span className="text-xs text-[#878787] font-mono flex gap-1 items-center">
                   <span>+{rule.libs.length - 2} more</span>
                   <ChevronDown className="w-3 h-3" />

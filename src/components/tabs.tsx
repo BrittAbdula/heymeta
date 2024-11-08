@@ -10,10 +10,10 @@ const tabs = [
     name: "All",
     path: "/",
   },
-  {
-    name: "Popular",
-    path: "/popular",
-  },
+  // {
+  //   name: "Popular",
+  //   path: "/popular",
+  // },
 ];
 
 export function Tabs() {

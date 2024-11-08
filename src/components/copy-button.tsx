@@ -14,7 +14,7 @@ export function CopyButton({
   const { execute } = useAction(voteAction);
 
   const handleCopy = () => {
-    execute({ slug });
+    // execute({ slug });
     navigator.clipboard.writeText(content);
     setCopied(true);
     toast(

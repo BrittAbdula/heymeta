@@ -66,7 +66,7 @@ export function Menu() {
         </div>
       </ScrollArea>
       <Separator className="my-4" />
-      <a
+      {/* <a
         href="https://github.com/pontusab/cursor.directory"
         target="_blank"
         rel="noreferrer"
@@ -77,7 +77,7 @@ export function Menu() {
         >
           <span>Submit</span> <PlusIcon className="w-4 h-4" />
         </Button>
-      </a>
+      </a> */}
     </aside>
   );
 }

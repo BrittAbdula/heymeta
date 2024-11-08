@@ -12,44 +12,44 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  title: "Cursor Directory",
-  description: "Find the best cursor rules for your framework and language",
+  title: "The Ultimate Guide to Ray-Ban Meta Glasses Commands & Tips",
+  description: "Discover how to fully utilize your Ray-Ban Meta glasses with HeyMeta.app. Explore voice commands, AI features, hands-free photo and video capture, live streaming, translation, and more. Learn tips and tricks to simplify your day-to-day tasks and unlock the full power of Meta AI.",
   icons: [
     {
       rel: "icon",
-      url: "https://cdn.midday.ai/cursor/favicon.png",
+      url: "/meta.svg",
     },
   ],
   openGraph: {
-    title: "Cursor Directory",
-    description: "Find the best cursor rules for your framework and language",
-    url: "https://cursor.directory",
+    title: "The Ultimate Guide to Ray-Ban Meta Glasses Commands & Tips",
+    description: "Discover how to fully utilize your Ray-Ban Meta glasses with HeyMeta.app. Explore voice commands, AI features, hands-free photo and video capture, live streaming, translation, and more. Learn tips and tricks to simplify your day-to-day tasks and unlock the full power of Meta AI.",
+    url: "https://heymeta.app/",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://cdn.midday.ai/cursor/opengraph-image.png",
+        url: "/meta.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://cdn.midday.ai/cursor/opengraph-image.png",
+        url: "/meta.svg",
         width: 1800,
         height: 1600,
       },
     ],
   },
   twitter: {
-    title: "Cursor Directory",
-    description: "Find the best cursor rules for your framework and language",
+    title: "The Ultimate Guide to Ray-Ban Meta Glasses Commands & Tips",
+    description: "Discover how to fully utilize your Ray-Ban Meta glasses with HeyMeta.app. Explore voice commands, AI features, hands-free photo and video capture, live streaming, translation, and more. Learn tips and tricks to simplify your day-to-day tasks and unlock the full power of Meta AI.",
     images: [
       {
-        url: "https://cdn.midday.ai/cursor/opengraph-image.png",
+        url: "/meta.svg",
         width: 800,
         height: 600,
       },
       {
-        url: "https://cdn.midday.ai/cursor/opengraph-image.png",
+        url: "/meta.svg",
         width: 1800,
         height: 1600,
       },
@@ -94,7 +94,7 @@ export default function RootLayout({
           <div className="flex">
             {children}
 
-            <a
+            {/* <a
               href="https://github.com/pontusab/cursor.directory"
               target="_blank"
               rel="noreferrer"
@@ -106,10 +106,10 @@ export default function RootLayout({
               >
                 <PlusIcon className="w-4 h-4" />
               </Button>
-            </a>
+            </a> */}
           </div>
 
-          <Banner />
+          {/* <Banner /> */}
           <Toaster />
         </ThemeProvider>
       </body>
