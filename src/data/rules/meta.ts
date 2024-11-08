@@ -76,7 +76,7 @@ export const metaRules = [
     tags: ["Media", "Camera"],
     slug: "ask-meta-take-photo",
     libs: ["Camera"],
-    content: "Take a photo",
+    content: "Hey Meta, take a photo",
     author: {
       name: "meta",
       url: "https://www.meta.com/smart-glasses/",
@@ -88,7 +88,7 @@ export const metaRules = [
     tags: ["Social", "Media"],
     slug: "ask-meta-share-photo",
     libs: ["Camera", "Social"],
-    content: "Share that photo with Anna",
+    content: "Hey Meta, share that photo with Anna",
     author: {
       name: "meta",
       url: "https://www.meta.com/smart-glasses/",
@@ -100,7 +100,7 @@ export const metaRules = [
     tags: ["Utility", "System"],
     slug: "ask-meta-battery",
     libs: ["AI", "Speaker"],
-    content: "How much battery is left?",
+    content: "Hey Meta, how much battery is left?",
     author: {
       name: "meta",
       url: "https://www.meta.com/smart-glasses/",
@@ -112,7 +112,7 @@ export const metaRules = [
     tags: ["General"],
     slug: "ask-meta-summarize",
     libs: ["AI", "Camera", "Mic", "Speaker"],
-    content: `Summarize this`,
+    content: `Hey Meta, summarize this`,
     author: {
       name: "meta",
       url: "https://www.meta.com/smart-glasses/",
@@ -252,7 +252,7 @@ export const metaRules = [
     tags: ["Media", "Camera"],
     slug: "ask-meta-take-video",
     libs: ["Camera"],
-    content: "Take a video",
+    content: "Hey Meta, take a video",
     author: { name: "meta", url: "https://www.meta.com/smart-glasses/", avatar: "https://static.xx.fbcdn.net/rsrc.php/y9/r/tL_v571NdZ0.svg" },
   },
   {
@@ -268,7 +268,7 @@ export const metaRules = [
     tags: ["Utility", "Language"],
     slug: "ask-meta-translate",
     libs: ["AI", "Camera", "Mic", "Speaker"],
-    content: "Translate this",
+    content: "Hey Meta, translate this",
     author: { name: "meta", url: "https://www.meta.com/smart-glasses/", avatar: "https://static.xx.fbcdn.net/rsrc.php/y9/r/tL_v571NdZ0.svg" },
   },
   {
@@ -276,7 +276,7 @@ export const metaRules = [
     tags: ["Utility", "Time"],
     slug: "ask-meta-time",
     libs: ["AI", "Speaker"],
-    content: "What time is it?",
+    content: "Hey Meta, what time is it?",
     author: { name: "meta", url: "https://www.meta.com/smart-glasses/", avatar: "https://static.xx.fbcdn.net/rsrc.php/y9/r/tL_v571NdZ0.svg" },
   },
 ]
