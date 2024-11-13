@@ -5,6 +5,7 @@ export const cameraRules = [
     slug: "ask-meta-plant-care",
     libs: ["AI", "Camera", "Mic", "Speaker"],
     content: `Hey Meta,how often should I water this plant?`,
+    imageUrls: ['/metaai.png'],
     author: {
       name: "meta",
       url: "https://www.meta.com/smart-glasses/",

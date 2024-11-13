@@ -8,6 +8,7 @@ export interface Rule {
   libs: string[];
   content: string;
   author: Author;
+  imageUrls: string[];
 }
 
 interface Author {
